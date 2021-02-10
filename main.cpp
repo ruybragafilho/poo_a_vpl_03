@@ -26,9 +26,11 @@ Ponto* lerProximoPonto(std::string line) {
       return new Ponto2D(x, y);
     }
   }
+  return nullptr;
 }
 
 int main() {
+
   // le o arquivo
   std::vector<Ponto*> pontos;
   std::string line;
@@ -56,5 +58,6 @@ int main() {
 		    std::cout << p2d->to_string() << "\n";
 		}
 	}
+
   return 0;
 }
